@@ -1,161 +1,119 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
   <head>
+    <!-- Meta básica da página -->
     <meta charset="UTF-8" />
+    <meta equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Iarla Braids</title>
+    <title>Art of the Braid - Herança em cada Trança</title>
+    <!-- Google Fonts: Noto Serif -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link do arquivo CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./image/iarla_braids_logo.png" type="image/png" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
-      <div class="container">
-        <nav>
-          <img src="image/logo-iarla-braids-removebg.png" class="logo" alt="Iarla Braids" />
-          <ul class="nav-links">
-            <li><a href="#Início">Início</a></li>
-            <li><a href="#serviços">Serviços</a></li>
-            <li><a href="#portfólio">Portfólio</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+    <!-- Cabeçalho principal com navegação -->
+    <header class="site-header">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a
+          class="logo"
+          href="#home"
+          aria-label="Página inicial Art of the Braid"
+        >
+          <img
+            src="./image/iarla_braids_logo.png"
+            alt="Logo Art of the Braid"
+          />
+        </a>
+
+        <button
+          class="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#portfolio">Portfólio</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#contato" id="btn-book">Agendar Agora</a>
+        </div>
+      </nav>
     </header>
-    <main>
-      <!-- seção hero -->
-      <section class="container-hero" id="Início">
-        <div class="hero-image">
-          <img src="" alt="Transformando cabelos em obras de arte">
-          <div class="hero-content">
-            <h2>Transformando cabelos em obras de arte</h2>
-            <p>
-              Especialista em tranças africanas, box braids, twists e penteados
-              criativos
-            </p>
-            <a href="#contato" class="btn-agendar">Agende seu horário</a>
-          </div>
-        </div>
-      </section>
 
-      <!-- seção serviços -->
-      <section class="container-serviços" id="serviços">
-        <h2>Meu Serviços</h2>
-        <div class="serviço">
-          <h3>Tranças Africanas</h3>
-          <p>Descrição do serviço de tranças africanas.</p>
-        </div>
-        <div class="serviço">
-          <h3>Box Braids</h3>
-          <p>Descrição do serviço de box braids.</p>
-        </div>
-        <div class="serviço">
-          <h3>Twists</h3>
-          <p>Descrição do serviço de twists.</p>
-        </div>
-        <div class="serviço">
-          <h3>Penteados Criativos</h3>
-          <p>Descrição do serviço de penteados criativos.</p>
-        </div>
-      </section>
-
-      <!-- seção portfólio -->
-      <section class="container-portfólio" id="portfólio">
-        <h2>Meu Portfólio</h2>
-        <div class="projeto">
-          <h3>Projeto 1</h3>
-          <p>Descrição do projeto 1.</p>
-        </div>
-        <div class="projeto">
-          <h3>Projeto 2</h3>
-          <p>Descrição do projeto 2.</p>
-        </div>
-        <div class="projeto">
-          <h3>Projeto 3</h3>
-          <p>Descrição do projeto 3.</p>
-        </div>
-      </section>
-
-      <!-- seção sobre -->
-      <section class="container-sobre" id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>
-          Minha jornada começou há 2 anos, quando descobri minha paixão por
-          transformar cabelos em verdadeiras obras de arte. Desde então, tenho
-          me especializado em diversas técnicas de tranças africanas e
-          contemporâneas. Acredito que cada cliente é único, por isso trabalho
-          para criar penteados que realcem sua beleza natural e expressem sua
-          personalidade. Utilizo apenas produtos de qualidade e técnicas que
-          preservam a saúde do seu cabelo.
-        </p>
-        <div class="sobre-image">
-          <img src="sua-imagem.jpg" alt="Foto da treçista" />
-        </div>
-      </section>
-      <section class="container-depoimentos" id="depoimentos">
-        <h2>Depoimentos</h2>
-        <div class="depoimento">
+    <!-- Conteúdo principal da página -->
+    <main id="home">
+      <!-- Seção de destaque -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="section-label">Tranças com identidade e sofisticação</p>
+          <h1 id="hero-title">Arte em Cada Trança, Realeza em Cada Estilo</h1>
           <p>
-            "Adorei meu novo penteado! A Iarla é super talentosa e atenciosa."
+            Especialista em tranças nagô, box braids e penteados exclusivos que
+            celebram sua identidade e ancestralidade com sofisticação.
           </p>
-          <p>- Cliente Satisfeita</p>
-          <div class="depoimento-image">
-            <img
-              src="cliente-satisfeita.jpg"
-              alt="Depoimento de Cliente Satisfeita"
-            />
+          <div class="hero-btns">
+            <a href="#contato" class="btn-whatsapp">Agendar pelo WhatsApp</a>
+            <a href="#portfolio" class="btn-outline">Ver Portfólio</a>
           </div>
         </div>
-        <div class="depoimento">
-          <p>"As tranças ficaram incríveis! Recomendo a todos."</p>
-          <p>- Cliente Feliz</p>
-          <div class="depoimento-image">
-            <img src="cliente-feliz.jpg" alt="Depoimento de Cliente Feliz" />
-          </div>
+        <div class="hero-image">
+          <img src="./image/modelo trança nago.png" alt="Trança Profissional" />
         </div>
       </section>
 
-      <!-- Contato -->
-      <section class="container-contato" id="contato">
-        <h2>Contato</h2>
-        <p>Agende seu horário ou tire suas dúvidas</p>
-        <div class="contato-info">
-          <div class="contato-email">
-            <h4>Email:</h4>
-            <p>contato@seusite.com</p>
-          </div>
-          <div class="contato-telefone">
-            <h4>Telefone:</h4>
-            <p>(00) 1234-5678</p>
-          </div>
+      <section id="servicos" class="services">
+        <div class="section-header">
+          <h2>Nossos Serviços</h2>
+          <p>Escolha sua Coroa</p>
         </div>
-        <form class="contato-form">
-          <input type="text" placeholder="Seu nome" required />
-          <input type="email" placeholder="Seu email" required />
-          <input type="tel" placeholder="Seu telefone" />
-          <textarea placeholder="Sua mensagem" required></textarea>
-          <button type="submit" class="btn">Enviar Mensagem</button>
-        </form>
-      </section>
-      <!-- seção footer -->
-      <footer>
-        <div class="footer-content">
-          <div class="footer-logo">
-            <img src="logo.png" alt="Iarla Braids" />
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Trança Nagô</h3>
             <p>
-              Transformando cabelos em obras de arte com técnicas especializadas
-              em tranças.
+              Desenhos geométricos e personalizados rente ao couro cabeludo.
+              Perfeito para eventos.
             </p>
+            <span class="price">A partir de R$ 80</span>
           </div>
-          <div class="social-links">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">WhatsApp</a>
+          <div class="service-card">
+            <h3>Box Braids</h3>
+            <p>
+              As clássicas tranças soltas com material sintético premium.
+              Versatilidade e proteção.
+            </p>
+            <span class="price">A partir de R$ 250</span>
           </div>
-          <p>&copy; 2023 - Seu Nome. Todos os direitos reservados.</p>
+          <div class="service-card">
+            <h3>Gypsy Braids</h3>
+            <p>
+              Tranças com fios soltos cacheados para um visual leve, boêmio e
+              cheio de movimento.
+            </p>
+            <span class="price">A partir de R$ 320</span>
+          </div>
         </div>
-      </footer>
+      </section>
     </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="logo">Art of the Braid</div>
+        <p>&copy; 2024 Art of the Braid. Herança em cada Fio.</p>
+        <div class="social-links">
+          <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="javascript.js"></script>
   </body>
 </html>
